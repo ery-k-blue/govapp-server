@@ -46,4 +46,4 @@ group :development do
   # gem "spring"
 end
 
-gem "rack-cors"
+gem "rack-cors", "~> 2.0"
