@@ -31,6 +31,14 @@ services:
       TZ: "Asia/Tokyo"
     ports:
       - "3316:3306"
+  scraping:
+    build:
+      context: .
+      dockerfile: Dockerfile_scraping
+    volumes:
+      - ./scraping:/scraping
+    command: sleep infinity
+    working_dir: /scraping
 # PC上にdb-volumeという名前でボリューム（データ領域）が作成される
 # コンテナを作り直したとしてもPC上に残るようにするために設定
 volumes:
