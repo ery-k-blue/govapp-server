@@ -16,6 +16,7 @@ module App
         origins 'http://localhost:3011'
         resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options]
       end
+    end
 
     # Configuration for the application, engines, and railties goes here.
     #
